@@ -11,7 +11,7 @@
 @implementation DBHelp
 
 + (NSString *)FMDBPath {
-    return  [[NSBundle mainBundle] pathForResource:@"herbal" ofType:@"db"];
+    return  [[NSBundle mainBundle] pathForResource:@"data" ofType:@"db"];
 }
 + (FMDatabase *)db {
     FMDatabase *_db = [FMDatabase databaseWithPath:[self FMDBPath]];

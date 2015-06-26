@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04124F920663341F6BEEF24D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C59F99A97677E71757A5F65 /* libPods.a */; };
+		6CF666991B3E0E2A0032EEE4 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 6CF666981B3E0E2A0032EEE4 /* data.db */; };
 		FF77BCCD1B3D2780009C5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCCC1B3D2780009C5021 /* AppDelegate.swift */; };
 		FF77BCCF1B3D2780009C5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCCE1B3D2780009C5021 /* ViewController.swift */; };
 		FF77BCD21B3D2780009C5021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF77BCD01B3D2780009C5021 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		FF77BCE31B3D2780009C5021 /* QMHerbalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCE21B3D2780009C5021 /* QMHerbalTests.swift */; };
 		FF77BCF11B3D4B05009C5021 /* DBHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF01B3D4B05009C5021 /* DBHelp.m */; };
 		FF77BCF61B3D4CA4009C5021 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF51B3D4CA4009C5021 /* Model.m */; };
-		FF77BCF81B3D50BE009C5021 /* herbal.db in Resources */ = {isa = PBXBuildFile; fileRef = FF77BCF71B3D50BE009C5021 /* herbal.db */; };
 		FF77BCFA1B3D518F009C5021 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF91B3D518F009C5021 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CF666981B3E0E2A0032EEE4 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		8C59F99A97677E71757A5F65 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B396772BD8D82421CAF3434E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB29C0E3795E6E101DBE6E9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		FF77BCF01B3D4B05009C5021 /* DBHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelp.m; sourceTree = "<group>"; };
 		FF77BCF41B3D4CA4009C5021 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		FF77BCF51B3D4CA4009C5021 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
-		FF77BCF71B3D50BE009C5021 /* herbal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = herbal.db; sourceTree = "<group>"; };
 		FF77BCF91B3D518F009C5021 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,9 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				FF77BCEE1B3D4B05009C5021 /* QMHerbal-Bridging-Header.h */,
-				FF77BCF71B3D50BE009C5021 /* herbal.db */,
 				FF77BCEF1B3D4B05009C5021 /* DBHelp.h */,
 				FF77BCF01B3D4B05009C5021 /* DBHelp.m */,
+				6CF666981B3E0E2A0032EEE4 /* data.db */,
 				FF77BCF41B3D4CA4009C5021 /* Model.h */,
 				FF77BCF51B3D4CA4009C5021 /* Model.m */,
 			);
@@ -245,9 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF77BCD21B3D2780009C5021 /* Main.storyboard in Resources */,
+				6CF666991B3E0E2A0032EEE4 /* data.db in Resources */,
 				FF77BCD71B3D2780009C5021 /* LaunchScreen.xib in Resources */,
 				FF77BCD41B3D2780009C5021 /* Images.xcassets in Resources */,
-				FF77BCF81B3D50BE009C5021 /* herbal.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
