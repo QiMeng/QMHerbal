@@ -35,7 +35,6 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         searchBar.text = ""
         mainCollection.reloadData()
         
-
         mainSearch.setShowsCancelButton(false, animated: true)
         mainSearch.resignFirstResponder()
     }
@@ -44,7 +43,6 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         
         searchData = DBHelp.search(searchBar.text)  as! Array<Model>
         
-
         mainCollection.reloadData()
         
         mainSearch.setShowsCancelButton(false, animated: true)
