@@ -40,6 +40,7 @@
 		FF77BCDC1B3D2780009C5021 /* QMHerbalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QMHerbalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF77BCE11B3D2780009C5021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF77BCE21B3D2780009C5021 /* QMHerbalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMHerbalTests.swift; sourceTree = "<group>"; };
+		FF77BCEC1B3D498D009C5021 /* herbal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = herbal.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		FF77BCC91B3D2780009C5021 /* QMHerbal */ = {
 			isa = PBXGroup;
 			children = (
+				FF77BCEC1B3D498D009C5021 /* herbal.db */,
 				FF77BCCC1B3D2780009C5021 /* AppDelegate.swift */,
 				FF77BCCE1B3D2780009C5021 /* ViewController.swift */,
 				FF77BCD01B3D2780009C5021 /* Main.storyboard */,
