@@ -14,6 +14,10 @@
 		FF77BCD41B3D2780009C5021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF77BCD31B3D2780009C5021 /* Images.xcassets */; };
 		FF77BCD71B3D2780009C5021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF77BCD51B3D2780009C5021 /* LaunchScreen.xib */; };
 		FF77BCE31B3D2780009C5021 /* QMHerbalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCE21B3D2780009C5021 /* QMHerbalTests.swift */; };
+		FF77BCF11B3D4B05009C5021 /* DBHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF01B3D4B05009C5021 /* DBHelp.m */; };
+		FF77BCF61B3D4CA4009C5021 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF51B3D4CA4009C5021 /* Model.m */; };
+		FF77BCF81B3D50BE009C5021 /* herbal.db in Resources */ = {isa = PBXBuildFile; fileRef = FF77BCF71B3D50BE009C5021 /* herbal.db */; };
+		FF77BCFA1B3D518F009C5021 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCF91B3D518F009C5021 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,13 @@
 		FF77BCDC1B3D2780009C5021 /* QMHerbalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QMHerbalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF77BCE11B3D2780009C5021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF77BCE21B3D2780009C5021 /* QMHerbalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMHerbalTests.swift; sourceTree = "<group>"; };
-		FF77BCEC1B3D498D009C5021 /* herbal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = herbal.db; sourceTree = "<group>"; };
+		FF77BCEE1B3D4B05009C5021 /* QMHerbal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMHerbal-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF77BCEF1B3D4B05009C5021 /* DBHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelp.h; sourceTree = "<group>"; };
+		FF77BCF01B3D4B05009C5021 /* DBHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelp.m; sourceTree = "<group>"; };
+		FF77BCF41B3D4CA4009C5021 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		FF77BCF51B3D4CA4009C5021 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		FF77BCF71B3D50BE009C5021 /* herbal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = herbal.db; sourceTree = "<group>"; };
+		FF77BCF91B3D518F009C5021 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +112,10 @@
 		FF77BCC91B3D2780009C5021 /* QMHerbal */ = {
 			isa = PBXGroup;
 			children = (
-				FF77BCEC1B3D498D009C5021 /* herbal.db */,
+				FF77BCED1B3D4AD8009C5021 /* OCHELP */,
 				FF77BCCC1B3D2780009C5021 /* AppDelegate.swift */,
 				FF77BCCE1B3D2780009C5021 /* ViewController.swift */,
+				FF77BCF91B3D518F009C5021 /* DetailsViewController.swift */,
 				FF77BCD01B3D2780009C5021 /* Main.storyboard */,
 				FF77BCD31B3D2780009C5021 /* Images.xcassets */,
 				FF77BCD51B3D2780009C5021 /* LaunchScreen.xib */,
@@ -136,6 +147,19 @@
 				FF77BCE11B3D2780009C5021 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF77BCED1B3D4AD8009C5021 /* OCHELP */ = {
+			isa = PBXGroup;
+			children = (
+				FF77BCEE1B3D4B05009C5021 /* QMHerbal-Bridging-Header.h */,
+				FF77BCF71B3D50BE009C5021 /* herbal.db */,
+				FF77BCEF1B3D4B05009C5021 /* DBHelp.h */,
+				FF77BCF01B3D4B05009C5021 /* DBHelp.m */,
+				FF77BCF41B3D4CA4009C5021 /* Model.h */,
+				FF77BCF51B3D4CA4009C5021 /* Model.m */,
+			);
+			name = OCHELP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +247,7 @@
 				FF77BCD21B3D2780009C5021 /* Main.storyboard in Resources */,
 				FF77BCD71B3D2780009C5021 /* LaunchScreen.xib in Resources */,
 				FF77BCD41B3D2780009C5021 /* Images.xcassets in Resources */,
+				FF77BCF81B3D50BE009C5021 /* herbal.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF77BCCF1B3D2780009C5021 /* ViewController.swift in Sources */,
+				FF77BCF11B3D4B05009C5021 /* DBHelp.m in Sources */,
 				FF77BCCD1B3D2780009C5021 /* AppDelegate.swift in Sources */,
+				FF77BCF61B3D4CA4009C5021 /* Model.m in Sources */,
+				FF77BCFA1B3D518F009C5021 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,9 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QMHerbal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QMHerbal/QMHerbal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -417,9 +448,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QMHerbal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QMHerbal/QMHerbal-Bridging-Header.h";
 			};
 			name = Release;
 		};
