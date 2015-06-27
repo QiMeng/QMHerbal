@@ -103,7 +103,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQf-lJ-Xtx">
-                                        <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                        <rect key="frame" x="13" y="8" width="574" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -111,10 +111,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PQf-lJ-Xtx" firstAttribute="centerX" secondItem="yJH-39-GZe" secondAttribute="centerX" id="8zp-jp-Yvv"/>
-                                    <constraint firstItem="PQf-lJ-Xtx" firstAttribute="leading" secondItem="yJH-39-GZe" secondAttribute="leadingMargin" id="FvA-cl-eY5"/>
-                                    <constraint firstItem="PQf-lJ-Xtx" firstAttribute="trailing" secondItem="yJH-39-GZe" secondAttribute="trailingMargin" id="R6M-6I-0lx"/>
+                                    <constraint firstItem="PQf-lJ-Xtx" firstAttribute="leading" secondItem="yJH-39-GZe" secondAttribute="leadingMargin" constant="5" id="FvA-cl-eY5"/>
+                                    <constraint firstItem="PQf-lJ-Xtx" firstAttribute="trailing" secondItem="yJH-39-GZe" secondAttribute="trailingMargin" constant="5" id="R6M-6I-0lx"/>
                                     <constraint firstItem="PQf-lJ-Xtx" firstAttribute="top" secondItem="yJH-39-GZe" secondAttribute="topMargin" id="XMt-WR-l0u"/>
-                                    <constraint firstAttribute="bottom" secondItem="PQf-lJ-Xtx" secondAttribute="bottom" constant="507" id="t7i-SQ-5md"/>
+                                    <constraint firstAttribute="bottom" secondItem="PQf-lJ-Xtx" secondAttribute="bottom" constant="10" id="t7i-SQ-5md"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
