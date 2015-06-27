@@ -11,7 +11,7 @@
 @implementation DBHelp
 
 + (NSString *)FMDBPath {
-    return  [[NSBundle mainBundle] pathForResource:@"data" ofType:@"db"];
+    return  [[NSBundle mainBundle] pathForResource:@"herbal" ofType:@"db"];
 }
 + (FMDatabase *)db {
     FMDatabase *_db = [FMDatabase databaseWithPath:[self FMDBPath]];
@@ -27,8 +27,8 @@
         FMDatabase * db = [self db];
         
 //        FMResultSet *rs = [db executeQuery:@"SELECT * FROM medica"];
-        
-        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM medica LIMIT %d,%d",aPage*100,100]];
+        NSLog(@"%@",[NSString stringWithFormat:@"SELECT * FROM medica LIMIT %d,%d",aPage*500,500]);
+        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM medica LIMIT %d,%d",aPage*500,500]];
         
         while ([rs next]) {
             
