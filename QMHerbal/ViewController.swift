@@ -52,7 +52,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if (mainSearch.text.isEmpty) {
-            println("allcount = \(data.count)")
+//            println("allcount = \(data.count)")
             return data.count
         }
         return searchData.count
@@ -66,7 +66,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         var titleLabel:UILabel? = cell.contentView.viewWithTag(100) as? UILabel
         if titleLabel == nil {
             //非复用，创建并添加到contentView里
-            println("label == nil\(indexPath.item)")
+//            println("label == nil\(indexPath.item)")
             titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
             titleLabel!.tag = 100
             cell.contentView.addSubview(titleLabel!)
