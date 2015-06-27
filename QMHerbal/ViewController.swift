@@ -21,9 +21,9 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         data = DBHelp.readPage(0) as! Array<Model>
-        mainSearch.placeholder = "搜索(\(data.count))"
+
+        mainSearch.placeholder = "搜索(10026个)"
     }
     
     func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
@@ -37,6 +37,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         
         mainSearch.setShowsCancelButton(false, animated: true)
         mainSearch.resignFirstResponder()
+        
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -48,11 +49,10 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         mainSearch.setShowsCancelButton(false, animated: true)
         mainSearch.resignFirstResponder()
     }
-
-    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if (mainSearch.text.isEmpty) {
+            println("allcount = \(data.count)")
             return data.count
         }
         return searchData.count
@@ -60,9 +60,17 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
-        
-        let titleLabel = cell.contentView.viewWithTag(100) as! UILabel
+        var cell:UICollectionViewCell =  self.mainCollection.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
+
+
+        var titleLabel:UILabel? = cell.contentView.viewWithTag(100) as? UILabel
+        if titleLabel == nil {
+            //非复用，创建并添加到contentView里
+            println("label == nil\(indexPath.item)")
+            titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+            titleLabel!.tag = 100
+            cell.contentView.addSubview(titleLabel!)
+        }
         
         cell.layer.borderColor = UIColor.blackColor().CGColor
         cell.layer.borderWidth = 1
@@ -71,15 +79,29 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         
         if (mainSearch.text.isEmpty) {
             let m = data[indexPath.row] as Model
-            titleLabel.text = m.title
+            titleLabel!.text = m.title
         }else {
             let m = searchData[indexPath.row] as Model
-            titleLabel.text = m.title
+            titleLabel!.text = m.title
         }
+        
+        
+        if(indexPath.row == data.count - 5)
+        {
+            let page = data.count/100 + 1;
+            self.data += DBHelp.readPage(Int32(page)) as! Array<Model>
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                self.mainCollection.reloadData()
+            })
+
+        }
+
         
         return cell
     }
     
+
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         var m:Model!

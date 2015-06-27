@@ -26,9 +26,9 @@
     @autoreleasepool {
         FMDatabase * db = [self db];
         
-        FMResultSet *rs = [db executeQuery:@"SELECT * FROM medica"];
+//        FMResultSet *rs = [db executeQuery:@"SELECT * FROM medica"];
         
-//        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM medica LIMIT %d,%d",aPage*100,(aPage+1) * 100]];
+        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM medica LIMIT %d,%d",aPage*100,100]];
         
         while ([rs next]) {
             
