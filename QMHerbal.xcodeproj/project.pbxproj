@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04124F920663341F6BEEF24D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C59F99A97677E71757A5F65 /* libPods.a */; };
-		6C011A651B3EECDD00AA69EC /* herbal.db in Resources */ = {isa = PBXBuildFile; fileRef = 6C011A641B3EECDD00AA69EC /* herbal.db */; };
 		6CF666991B3E0E2A0032EEE4 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 6CF666981B3E0E2A0032EEE4 /* data.db */; };
 		FF77BCCD1B3D2780009C5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCCC1B3D2780009C5021 /* AppDelegate.swift */; };
 		FF77BCCF1B3D2780009C5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77BCCE1B3D2780009C5021 /* ViewController.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6C011A641B3EECDD00AA69EC /* herbal.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = herbal.db; sourceTree = "<group>"; };
 		6CF666981B3E0E2A0032EEE4 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		8C59F99A97677E71757A5F65 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B396772BD8D82421CAF3434E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		FF77BCED1B3D4AD8009C5021 /* OCHELP */ = {
 			isa = PBXGroup;
 			children = (
-				6C011A641B3EECDD00AA69EC /* herbal.db */,
 				FF77BCEE1B3D4B05009C5021 /* QMHerbal-Bridging-Header.h */,
 				FF77BCEF1B3D4B05009C5021 /* DBHelp.h */,
 				FF77BCF01B3D4B05009C5021 /* DBHelp.m */,
@@ -248,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF77BCD21B3D2780009C5021 /* Main.storyboard in Resources */,
-				6C011A651B3EECDD00AA69EC /* herbal.db in Resources */,
 				6CF666991B3E0E2A0032EEE4 /* data.db in Resources */,
 				FF77BCD71B3D2780009C5021 /* LaunchScreen.xib in Resources */,
 				FF77BCD41B3D2780009C5021 /* Images.xcassets in Resources */,

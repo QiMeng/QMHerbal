@@ -86,7 +86,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         }
         
         
-        if(data.count != 5937  && indexPath.row == data.count - 5)
+        if(data.count != 10026  && indexPath.row == data.count - 5)
         {
             let page = data.count/500 ;
             self.data += DBHelp.readPage(Int32(page)) as! Array<Model>
